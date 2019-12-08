@@ -13,7 +13,7 @@ class PostList extends Component {
           content: "Pessoal, alguém sabe se a Rocketseat está contratando?",
           comments: [
             {
-              id: 1,
+              id: 2,
               author: {
                 name: "Diego Fernandes",
                 avatar: "http://url-da-imagem.com/imagem.jpg"
@@ -29,9 +29,12 @@ class PostList extends Component {
       ]
     };
     render() {
+      //console.log(this.state);
        return (
-           
-       )
+        <div>
+          {this.state.posts.map(post => (<PostItem key={post.id} post={post}/>))}
+        </div>
+       );
     }
   }
 
