@@ -4,10 +4,11 @@ function Header() {
   return (
     <header>
       <nav>
-        <img src="https://i.imgur.com/KDIDiSE.png" />
+        <img src={require('../assets/face.jpg')} alt= "facelogo"/>
         <div>
           <span>Meu perfil</span>
-          <i className="material-icons">account_circle</i>
+          <img src={require('../assets/icon_login.png')} alt= "icon login"/>
+        <div></div>
         </div>
       </nav>
     </header>

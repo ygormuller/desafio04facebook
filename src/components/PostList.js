@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import PostItem from './PostItem';
+
 class PostList extends Component {
     state = {
       posts: [
@@ -7,24 +9,39 @@ class PostList extends Component {
           id: 1,
           author: {
             name: "Julio Alcantara",
-            avatar: "http://url-da-imagem.com/imagem.jpg"
+            avatar: require('../assets/im1.png')
           },
           date: "04 Jun 2019",
           content: "Pessoal, alguém sabe se a Rocketseat está contratando?",
           comments: [
             {
-              id: 2,
+              id: 1,
               author: {
                 name: "Diego Fernandes",
-                avatar: "http://url-da-imagem.com/imagem.jpg"
+                avatar: require('../assets/burns.jpeg')
               },
               content: "Conteúdo do comentário"
             }
           ]
         },
         {
-          id: 2
-          // Restante dos dados de um novo post
+          id: 2,
+          author: {
+              name: "Nina Bruna",
+              avatar: require('../assets/im2.png')
+          },
+          date: "24 Dez 2019",
+          content: "Em pleno Natal aqui!",
+          comments: [
+              {
+                id: 1,
+                author: {
+                  name: "Diego Fernandes",
+                  avatar: require('../assets/burns.jpeg')
+                },
+                content: "Isso ai Nina, manda ver!"
+              }
+          ]
         }
       ]
     };
@@ -32,7 +49,7 @@ class PostList extends Component {
       //console.log(this.state);
        return (
         <div>
-          {this.state.posts.map(post => (<PostItem key={post.id} post={post}/>))}
+          {this.state.posts.map(post => (<PostItem key={post.id}  post={post}/>))}
         </div>
        );
     }
