@@ -1,30 +1,20 @@
-# desafio04facebook
+# estudo04facebook
 
 <h3 align="center">
-  Desafio 4: Introdução ao React
+  Estudo: Introdução ao React
 </h3>
 
-<p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafio-04?color=%2304D361">
-
-  <a href="https://rocketseat.com.br">
-    <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%2304D361">
-  </a>
-
+  
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
 
-  <a href="https://github.com/Rocketseat/bootcamp-gostack-desafio-04/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/rocketseat/bootcamp-gostack-desafio-04?style=social">
-  </a>
 </p>
 
 <p align="center">
-  <a href="#rocket-sobre-o-desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-entrega">Entrega</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a>Sobre o estudo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
-## :rocket: Sobre o desafio
+## : Sobre o desafio
 
 Aplicação do zero utilizando **Webpack, Babel, Webpack Dev Server e ReactJS**.
 
@@ -37,38 +27,6 @@ As informações contidas na interface são **estáticas** e não refletem nenhu
 **Header:** Responsável por exibir a logo e o link para acessar o perfil;
 
 **PostList:** Responsável por armazenar os dados da listagem de post, esses dados devem ficar dentro do `state` do componente e não em uma variável comum, por exemplo:
-
-```js
-class PostList extends Component {
-  state = {
-    posts: [
-      {
-        id: 1,
-        author: {
-          name: "Julio Alcantara",
-          avatar: "http://url-da-imagem.com/imagem.jpg"
-        },
-        date: "04 Jun 2019",
-        content: "Pessoal, alguém sabe se a Rocketseat está contratando?",
-        comments: [
-          {
-            id: 1,
-            author: {
-              name: "Diego Fernandes",
-              avatar: "http://url-da-imagem.com/imagem.jpg"
-            },
-            content: "Conteúdo do comentário"
-          }
-        ]
-      },
-      {
-        id: 2
-        // Restante dos dados de um novo post
-      }
-    ]
-  };
-}
-```
 
 **Post:** Responsável por exibir os dados do post, esses dados devem vir através de uma propriedade recebida do componente PostList, ou seja, lá no PostList você terá algo assim:
 
