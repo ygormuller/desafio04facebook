@@ -4,14 +4,8 @@
   Estudo: Introdução ao React
 </h3>
 
-  
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
-
-</p>
-
 <p align="center">
   <a>Sobre o estudo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
 </p>
 
 ## : Sobre o desafio
