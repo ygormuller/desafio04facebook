@@ -8,7 +8,7 @@
   <a>Sobre o estudo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
-## : Sobre o desafio
+## Sobre o desafio
 
 Aplicação do zero utilizando **Webpack, Babel, Webpack Dev Server e ReactJS**.
 
